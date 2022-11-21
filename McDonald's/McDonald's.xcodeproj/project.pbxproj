@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB2D166929279EEC00558777 /* Paninoview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D166829279EEC00558777 /* Paninoview.swift */; };
+		DB41ADE8292B933900515C79 /* PullDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB41ADE7292B933900515C79 /* PullDown.swift */; };
 		DBDF4F6F29258C1C007BC9EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDF4F6E29258C1C007BC9EF /* AppDelegate.swift */; };
 		DBDF4F7129258C1C007BC9EF /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DBDF4F7029258C1C007BC9EF /* GameScene.sks */; };
 		DBDF4F7329258C1C007BC9EF /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = DBDF4F7229258C1C007BC9EF /* Actions.sks */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB2D166829279EEC00558777 /* Paninoview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paninoview.swift; sourceTree = "<group>"; };
+		DB41ADE7292B933900515C79 /* PullDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullDown.swift; sourceTree = "<group>"; };
 		DBDF4F6B29258C1C007BC9EF /* McDonald's.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "McDonald's.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBDF4F6E29258C1C007BC9EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBDF4F7029258C1C007BC9EF /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -64,7 +68,9 @@
 				DBDF4F6E29258C1C007BC9EF /* AppDelegate.swift */,
 				DBDF4F7029258C1C007BC9EF /* GameScene.sks */,
 				DBDF4F7229258C1C007BC9EF /* Actions.sks */,
+				DB41ADE7292B933900515C79 /* PullDown.swift */,
 				DBDF4F8729258C9A007BC9EF /* ContentView.swift */,
+				DB2D166829279EEC00558777 /* Paninoview.swift */,
 				DBDF4F7429258C1C007BC9EF /* GameScene.swift */,
 				DBDF4F7629258C1C007BC9EF /* GameViewController.swift */,
 				DBDF4F7829258C1C007BC9EF /* Main.storyboard */,
@@ -147,9 +153,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB2D166929279EEC00558777 /* Paninoview.swift in Sources */,
 				DBDF4F7529258C1C007BC9EF /* GameScene.swift in Sources */,
 				DBDF4F7729258C1C007BC9EF /* GameViewController.swift in Sources */,
 				DBDF4F8829258C9A007BC9EF /* ContentView.swift in Sources */,
+				DB41ADE8292B933900515C79 /* PullDown.swift in Sources */,
 				DBDF4F6F29258C1C007BC9EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

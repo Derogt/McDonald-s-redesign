@@ -48,7 +48,7 @@ class GameScene: SKScene {
     
     private func setupPlayer () {
         player = SKSpriteNode(texture: playerTexture, size: CGSize(width: 70, height: 46))
-        player.position = CGPoint(x:frame.width-110, y: frame.height-90)
+        player.position = CGPoint(x:frame.width-110, y: frame.height-60)
         
         addChild(player)
     }
@@ -63,7 +63,7 @@ class GameScene: SKScene {
     func startIdleAnimation() {
         let Idleanimation = SKAction.animate(with: playerIdleTextures, timePerFrame: 0.20)
         
-        player.run(SKAction.repeatForever(Idleanimation), withKey: ("playerIdleAnimation"))
+        player.run(SKAction.repeat(Idleanimation, count: 1), withKey: ("playerIdleAnimation"))
     }
     
     
