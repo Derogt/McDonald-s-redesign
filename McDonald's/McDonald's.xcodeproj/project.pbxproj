@@ -8,24 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		DB2D166929279EEC00558777 /* Paninoview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D166829279EEC00558777 /* Paninoview.swift */; };
+		DB41AE0E292D1B6F00515C79 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB41AE0D292D1B6F00515C79 /* View.swift */; };
 		DBDF4F6F29258C1C007BC9EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDF4F6E29258C1C007BC9EF /* AppDelegate.swift */; };
 		DBDF4F7529258C1C007BC9EF /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDF4F7429258C1C007BC9EF /* GameScene.swift */; };
-		DBDF4F7729258C1C007BC9EF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDF4F7629258C1C007BC9EF /* GameViewController.swift */; };
-		DBDF4F7A29258C1C007BC9EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBDF4F7829258C1C007BC9EF /* Main.storyboard */; };
 		DBDF4F7C29258C1D007BC9EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBDF4F7B29258C1D007BC9EF /* Assets.xcassets */; };
-		DBDF4F7F29258C1D007BC9EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBDF4F7D29258C1D007BC9EF /* LaunchScreen.storyboard */; };
 		DBDF4F8829258C9A007BC9EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDF4F8729258C9A007BC9EF /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DB2D166829279EEC00558777 /* Paninoview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paninoview.swift; sourceTree = "<group>"; };
+		DB41AE0D292D1B6F00515C79 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		DBDF4F6B29258C1C007BC9EF /* McDonald's.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "McDonald's.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBDF4F6E29258C1C007BC9EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBDF4F7429258C1C007BC9EF /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		DBDF4F7629258C1C007BC9EF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		DBDF4F7929258C1C007BC9EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBDF4F7B29258C1D007BC9EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DBDF4F7E29258C1D007BC9EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBDF4F8729258C9A007BC9EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,14 +55,12 @@
 		DBDF4F6D29258C1C007BC9EF /* McDonald's */ = {
 			isa = PBXGroup;
 			children = (
+				DB41AE0D292D1B6F00515C79 /* View.swift */,
 				DBDF4F6E29258C1C007BC9EF /* AppDelegate.swift */,
 				DBDF4F8729258C9A007BC9EF /* ContentView.swift */,
 				DB2D166829279EEC00558777 /* Paninoview.swift */,
 				DBDF4F7429258C1C007BC9EF /* GameScene.swift */,
-				DBDF4F7629258C1C007BC9EF /* GameViewController.swift */,
-				DBDF4F7829258C1C007BC9EF /* Main.storyboard */,
 				DBDF4F7B29258C1D007BC9EF /* Assets.xcassets */,
-				DBDF4F7D29258C1D007BC9EF /* LaunchScreen.storyboard */,
 			);
 			path = "McDonald's";
 			sourceTree = "<group>";
@@ -129,9 +123,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBDF4F7A29258C1C007BC9EF /* Main.storyboard in Resources */,
 				DBDF4F7C29258C1D007BC9EF /* Assets.xcassets in Resources */,
-				DBDF4F7F29258C1D007BC9EF /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,32 +136,13 @@
 			files = (
 				DB2D166929279EEC00558777 /* Paninoview.swift in Sources */,
 				DBDF4F7529258C1C007BC9EF /* GameScene.swift in Sources */,
-				DBDF4F7729258C1C007BC9EF /* GameViewController.swift in Sources */,
+				DB41AE0E292D1B6F00515C79 /* View.swift in Sources */,
 				DBDF4F8829258C9A007BC9EF /* ContentView.swift in Sources */,
 				DBDF4F6F29258C1C007BC9EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		DBDF4F7829258C1C007BC9EF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DBDF4F7929258C1C007BC9EF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DBDF4F7D29258C1D007BC9EF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DBDF4F7E29258C1D007BC9EF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DBDF4F8029258C1D007BC9EF /* Debug */ = {

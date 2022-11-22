@@ -32,8 +32,8 @@ struct ContentView: View {
             ScrollView {
                 VStack {
                     
-                    //                    Rectangle()
-                    //                        .frame(minWidth:.infinity, minHeight:10)
+//                    Rectangle()
+//                        .frame(minWidth:.infinity, minHeight:10)
                     
                     Rectangle()
                         .frame(width: 500, height: 150)
@@ -65,10 +65,10 @@ struct ContentView: View {
                             .font(.title)
                             .fontWeight(.bold)
                             .padding(.top,30)
-                        
+                          
                         Text("All the simplicity of chicken breast wrapped in crispy breadcrumbs, along with iceberg lettuce and the unmistakable McChicken sauce.")
                             .padding(.top,5)
-                        
+
                     }//end Vstack
                     .padding(.horizontal, 85)
                     
@@ -84,7 +84,7 @@ struct ContentView: View {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Image(systemName: "star")
                     }
-                }//end toolbar
+            }//end toolbar
                 
                 
                 
@@ -92,83 +92,99 @@ struct ContentView: View {
                 GroupBox {
                     DisclosureGroup("Nutritional facts")
                     {
-                        
-                        Text("100 gr  Per serving  RDA%")
-                            .fontWeight(.bold)
-                        
-                        
-                        HStack{
-                            Text("Carbohydrates")
-                                .fontWeight(.bold)
-                            Text("24.00  46.00  18%")
-                                .fontWeight(.semibold)
-                                .foregroundColor(Color("grigio"))
-                        }//end Hstack
-                        
-                        HStack{
-                            Text("Calories (Kcal)")
-                                .fontWeight(.bold)
-                            Text("230.00  446.00  22%")
-                                .fontWeight(.semibold)
-                                .foregroundColor(Color("grigio"))
-                        }//end Hstack
-                        
-                        HStack{
-                            Text("Calories (Kj)")
-                                .fontWeight(.bold)
-                            Text("963.00  1871.00  22%")
-                                .fontWeight(.semibold)
-                                .foregroundColor(Color("grigio"))
-                        }//end Hstack
-                        
-                        HStack{
-                            Text("Saturated Fats")
-                                .fontWeight(.bold)
-                            Text("1.20  2.30  12%")
-                                .fontWeight(.semibold)
-                                .foregroundColor(Color("grigio"))
-                        }//end Hstack
-                        
-                        HStack{
-                            Text("Fats")
-                                .fontWeight(.bold)
-                            Text("10.30  19.00  27%")
-                                .fontWeight(.semibold)
-                                .foregroundColor(Color("grigio"))
-                        }//end Hstack
-                        
-                        HStack{
-                            Text("Fibers")
-                                .fontWeight(.bold)
-                            Text("1.30  2.50 ")
-                                .fontWeight(.semibold)
-                                .foregroundColor(Color("grigio"))
-                        }//end Hstack
-                        
-                        HStack{
-                            Text("Proteins")
-                                .fontWeight(.bold)
-                            Text("11.00  21.00  42%")
-                                .fontWeight(.semibold)
-                                .foregroundColor(Color("grigio"))
-                        }//end Hstack
-                        
-                        HStack{
-                            Text("Salt")
-                                .fontWeight(.bold)
-                            Text("1.39  2.30  32%")
-                                .fontWeight(.semibold)
-                                .foregroundColor(Color("grigio"))
-                        }//end Hstack
+                        Divider()
+                            .background(Rectangle().fill(.white).frame(height: 2))
+                        VStack{
+                            Grid {
+                                GridRow {
+                                    Text("")
+                                        .font(.headline)
+                                    
+                                    Text("100 gr")
+                                    Text("Per serving")
+                                    Text("RDA%")
+                                    // fine prima riga
+                                }//gridrow end
+                                
+                                Divider()
+                                    .background(Rectangle().fill(.white).frame(height: 2))
+                                
+                                GridRow {
+                                    Text("Calories")
+                                        .font(.headline)
+                                    
+                                    Text("230.00")
+                                        .foregroundColor(.gray)
+                                    Text("446.00")
+                                        .foregroundColor(.gray)
+                                    Text("22%")
+                                        .foregroundColor(.gray)
+                                        
+                                    // fine seconda riga
+                                 }//gridrow end
+                                
+                                Divider()
+                                    .background(Rectangle().fill(.white).frame(height: 2))
+                                
+                                GridRow {
+                                    Text("Fats")
+                                        .font(.headline)
+                                    
+                                    Text("10.30")
+                                        .foregroundColor(.gray)
+                                    Text("19.00")
+                                        .foregroundColor(.gray)
+                                    Text("27%")
+                                        .foregroundColor(.gray)
+                                    // fine terza riga
+                                    }//gridrow end
+                                
+                                Divider()
+                                    .background(Rectangle().fill(.white).frame(height: 2))
+                                
+                                GridRow {
+                                    Text("Fibers")
+                                        .font(.headline)
+                                    
+                                    Text("1.30")
+                                        .foregroundColor(.gray)
+                                    Text("2.50")
+                                        .foregroundColor(.gray)
+                                    Text("")
+                                    // fine quarta riga
+                                    }//gridrow end
+                                
+                                Divider()
+                                    .background(Rectangle().fill(.white).frame(height: 2))
+                                
+                                GridRow {
+                                    Text("Salt")
+                                        .font(.headline)
+                                    
+                                    Text("1.39")
+                                        .foregroundColor(.gray)
+                                    Text("2.30")
+                                        .foregroundColor(.gray)
+                                    Text("32%")
+                                        .foregroundColor(.gray)
+                                    // fine quinta riga
+                                    }//gridrow end
+                                
+                                Divider()
+                                    .background(Rectangle().fill(.white).frame(height: 2))
+                               
+                                
+                            }//end grid
+                        }//end Vstack
                         
                     }//end disclosure group
                     
                     .foregroundColor(.black)
-                    .padding(.leading, 170)
+                    .padding(.horizontal,60)
                     .fontWeight(.bold)
                     .font(.headline)
                     
-                }//end groupbox
+                  }//end groupbox
                 .groupBoxStyle(ColoredGroupBox())
                 .padding(.top, 30)
                 
@@ -176,15 +192,18 @@ struct ContentView: View {
                 GroupBox {
                     DisclosureGroup("Allergens")
                     {
-                        HStack{
+                        Divider()
+                            .background(Rectangle().fill(.white).frame(height: 2))
+                        VStack{
                             Grid {
                                 GridRow {
-                                    Text("titolo riga")
+                                    Text("Gluten")
                                         .font(.headline)
                                     
-                                    Text("valore 1")
-                                    Text("valore 1")
-                                    Text("valore 1")
+                                    Text("")
+                                    Text("Yes")
+                                        .foregroundColor(.gray)
+                                    Text("")
                                     // fine prima riga
                                 }
                                 
@@ -192,118 +211,114 @@ struct ContentView: View {
                                     .background(Rectangle().fill(.white).frame(height: 2))
                                 
                                 GridRow {
-                                    Text("titolo riga")
+                                    Text("Sesame")
                                         .font(.headline)
                                     
-                                    Text("valore 1")
-                                    Text("valore 1")
-                                    Text("valore 1")
+                                    Text("")
+                                    Text("Yes")
+                                        .foregroundColor(.gray)
+                                    Text("")
                                     // fine seconda riga
                                     
-                                }
+                                }//end gridrow
                                 
-                                // ogni riga Ã¨ un GridRow (tutte all'interno di Grid)
-                                // tra ogni GridRow puoi mettere il Divider()
+                                Divider()
+                                    .background(Rectangle().fill(.white).frame(height: 2))
                                 
-                            }
-                        }
-                    }
+                                GridRow {
+                                    Text("Eggs")
+                                        .font(.headline)
+                                    
+                                    Text("")
+                                    Text("Yes")
+                                        .foregroundColor(.gray)
+                                    Text("")
+                                    // fine terza riga
+                                    
+                                }//end gridrow
+                                
+                                Divider()
+                                    .background(Rectangle().fill(.white).frame(height: 2))
+                                
+                                GridRow {
+                                    Text("Mustard")
+                                        .font(.headline)
+                                    
+                                    Text("")
+                                    Text("Yes")
+                                        .foregroundColor(.gray)
+                                    Text("")
+                                    // fine quarta riga
+                                    
+                                }//end gridrow
+                                
+                                Divider()
+                                    .background(Rectangle().fill(.white).frame(height: 2))
+                                
+                                GridRow {
+                                    Text("Milk")
+                                        .font(.headline)
+                                    
+                                    Text("")
+                                    Text("!")
+                                        .foregroundColor(.gray)
+                                    Text("")
+                                    // fine quinta riga
+                                    
+                                }//end gridrow
+                                
+                            }//end grid
+                        }//end Vstack
+                     }//end disclosure group
                     
-                }
+                    .foregroundColor(.black)
+                    .padding(.horizontal,60)
+                    .fontWeight(.bold)
+                    .font(.headline)
+                    
+                    
+                  }//end groupbox
                 
-                //                        HStack{
-                //                            Text("Gluten")
-                //                                .fontWeight(.bold)
-                //                            Text("yes")
-                //                                .fontWeight(.regular)
-                //                                .foregroundColor(Color("grigio"))
-                //                        }//end Hstack
-                //
-                //                        HStack{
-                //                            Text("Sesame")
-                //                                .fontWeight(.bold)
-                //                            Text("yes")
-                //                                .fontWeight(.regular)
-                //                                .foregroundColor(Color("grigio"))
-                //                        }//end Hstack
-                //
-                //                        HStack{
-                //                            Text("Eggs")
-                //                                .fontWeight(.bold)
-                //                            Text("yes")
-                //                                .fontWeight(.regular)
-                //                                .foregroundColor(Color("grigio"))
-                //
-                //                        }//end HStack
-                //
-                //
-                //                        HStack{
-                //                            Text("Mustard")
-                //                                .fontWeight(.bold)
-                //
-                //                            Text("yes")
-                //                                .fontWeight(.regular)
-                //                                .foregroundColor(Color("grigio"))
-                //                        }//end HStack
-                //
-                //                        HStack{
-                //                            Text("Milk")
-                //                                .fontWeight(.bold)
-                //
-                //                            Text("!")
-                //                                .fontWeight(.regular)
-                //                                .foregroundColor(Color("grigio"))
-                //                        }//end HStack
-                //
+                .groupBoxStyle(ColoredGroupBox())
+                .padding(.top, 5)
                 
-            }//end disclosure group
+                
             
-            .foregroundColor(.black)
-            .padding(.leading, 195)
-            .fontWeight(.bold)
-            .font(.headline)
-            
-            
-        }//end groupbox
-        //                .groupBoxStyle(ColoredGroupBox())
-        //                .padding(.top, 5)
-        
-        
-        
-    }
-    
-    
-    
-    
-    
-    
-    struct MainView: View {
-        var body: some View {
-            TabView {
-                ContentView()
-                    .tabItem {
-                        Label("Main Page", systemImage: "list.dash")
-                    }
-                
-                Color.blue
-                    .tabItem{
-                        Label("Favorites", systemImage: "star.fill")
-                    }
-                
-                Color.blue
-                    .tabItem {
-                        Label("My account", systemImage: "person.fill")
-                    }
             }
         }
+        
     }
+    }
+
+
     
     
-    
-    struct MainView_Previews: PreviewProvider {
-        static var previews: some View {
-            MainView()
+struct MainView: View {
+    var body: some View {
+        TabView {
+            ContentView()
+                .tabItem {
+                    Label("Main Page", systemImage: "list.dash")
+                }
             
+            Color.blue
+                .tabItem{
+                Label("Favorites", systemImage: "star.fill")
+                }
+            
+            Color.blue
+                .tabItem {
+                    Label("My account", systemImage: "person.fill")
+                }
         }
+    }
+}
+
+
+
+struct MainView_Previews: PreviewProvider {
+    static var previews: some View {
+        MainView()
+        
     }
 }
