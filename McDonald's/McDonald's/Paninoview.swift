@@ -17,8 +17,12 @@ struct Paninoview: View {
     }
     var body: some View {
         SpriteView(scene:self.scene)
-            .frame(width: 600, height: 900)
-            .ignoresSafeArea()
+            .frame(width:.infinity, height: 550)
+//            .overlay(
+//                Rectangle()
+//                    .fill(.black)
+//            )
+            //.ignoresSafeArea()
         
     }
 }

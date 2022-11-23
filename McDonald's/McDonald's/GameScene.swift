@@ -47,9 +47,12 @@ class GameScene: SKScene {
     }
     
     private func setupPlayer () {
-        player = SKSpriteNode(texture: playerTexture, size: CGSize(width: 70, height: 46))
-        player.position = CGPoint(x:frame.width-110, y: frame.height-60)
-        
+        player = SKSpriteNode(texture: playerTexture, size: CGSize(width: 140, height: 100))
+        let rectangle = SKSpriteNode(color: UIColor(named: "Color")!, size: CGSize(width: 300, height: 40))
+        rectangle.position = CGPoint(x:frame.width/2, y: frame.height/2)
+        player.position = CGPoint(x:frame.width/2, y: frame.height/2+10)
+
+        addChild(rectangle)
         addChild(player)
     }
     
